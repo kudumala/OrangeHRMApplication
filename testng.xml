@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.utilities.Reporting"></listener>
+	</listeners>
+<parameter name="Browser" value="firefox" />
+<parameter name="Url" value ="https://opensource-demo.orangehrmlive.com/"/>
+  <test thread-count="5" name="Test">
+    <classes>
+       <class name="com.qa.testscripts.OrangeHRMALLTextBoxAllHyperLinkAllImagesTC2andTC3andTC4andTC5andTC7"/>
+      <class name="com.qa.testscripts.getPageTitleForDifferentMenusTC8"/>
+       <class name="com.qa.testscripts.readDashboardHeadingTC10andTC11andTC12"/>
+         <class name="com.qa.testscripts.getPIMEmployeeTC13"/>  
+         <class name="com.qa.testscripts.getElementByCSSSelectorTC14"/> 
+        <class name="com.qa.testscripts.getElementByXpathTC15"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Automation]">
+  <parameter name="Url" value="https://opensource-demo.orangehrmlive.com/"/>
+  <parameter name="Browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.qa.utilities.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.qa.testscripts.getPageTitleForDifferentMenus">
+        <methods>
+          <include name="LeaveMenu"/>
+          <include name="setUp"/>
+          <include name="AdminMenu"/>
+          <include name="MaintenanceMenu"/>
+          <include name="PIMMenu"/>
+          <include name="tearDown"/>
+          <include name="DashboardMenu"/>
+          <include name="DirectoryMenu"/>
+          <include name="loadPages"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.getPageTitleForDifferentMenus -->
+      <class name="com.qa.testscripts.OrangeHRMALLTextBoxAllHyperLinkAllImages">
+        <methods>
+          <include name="checkTitle"/>
+          <include name="setUp"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
+          <include name="loadPages"/>
+          <include name="ValidatingSubMenuOnAdminMenu"/>
+          <include name="getALLTextBoxAllHyperLinkAllImages"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.OrangeHRMALLTextBoxAllHyperLinkAllImages -->
+      <class name="com.qa.testscripts.readDashboardHeading">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loadPages"/>
+          <include name="readDashboardMenu"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.readDashboardHeading -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test Automation] -->
